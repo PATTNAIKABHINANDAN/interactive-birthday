@@ -1,0 +1,37 @@
+.heart-tree {
+  position: relative;
+  width: 220px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.heart-tree__trunk {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 90px;
+  background: linear-gradient(180deg, #7a4a34, #4a2c1c);
+  border-radius: 6px 6px 2px 2px;
+}
+
+.heart-tree__roots {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 8px;
+  background: rgba(74, 44, 28, 0.4);
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+.heart-tree__heart {
+  position: absolute;
+  color: #c72f40;
+  font-size: 1.3rem;
+  text-shadow: 0 0 10px rgba(199,47,64,.28);
+  transform: translate(-50%, -50%);
+}

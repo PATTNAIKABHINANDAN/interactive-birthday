@@ -1,0 +1,38 @@
+.music-controller {
+  position: absolute;
+  top: max(14px, env(safe-area-inset-top));
+  left: 14px;
+  z-index: 40;
+  display: flex;
+  gap: 6px;
+  background: rgba(74, 14, 28, 0.55);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 247, 243, 0.18);
+  border-radius: 999px;
+  padding: 6px;
+}
+
+.music-controller__btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-cream);
+  font-size: 0.75rem;
+  background: rgba(255, 247, 243, 0.08);
+  transition: background var(--dur-fast) var(--ease-soft);
+}
+
+.music-controller__btn:active {
+  background: rgba(255, 247, 243, 0.2);
+}
+
+.music-controller__btn--small {
+  font-size: 0.7rem;
+}
+
+.music-controller__btn:disabled {
+  opacity: 0.4;
+}

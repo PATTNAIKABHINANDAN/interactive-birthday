@@ -1,0 +1,38 @@
+.scrapbook {
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-4);
+}
+
+.scrapbook__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3) var(--space-2);
+  padding: var(--space-3) 4px;
+  max-width: 380px;
+}
+
+.memory-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-3) 4px;
+  width: 100%;
+}
+
+.memory-board__item {
+  position: relative;
+}
+
+.memory-board__tape {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 46px;
+  height: 16px;
+  background: rgba(233, 166, 181, 0.55);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}

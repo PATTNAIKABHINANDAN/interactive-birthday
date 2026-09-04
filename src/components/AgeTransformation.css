@@ -1,0 +1,61 @@
+.age-transform {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.age-transform__number {
+  position: absolute;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 5rem;
+  color: var(--color-cream);
+  text-shadow: 0 0 20px rgba(255, 210, 160, 0.35);
+}
+
+.age-transform__number--new {
+  color: #fff2df;
+  text-shadow: 0 0 34px rgba(255, 216, 160, 0.75), 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.age-transform__flames {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 30px;
+}
+
+.age-transform__flame {
+  position: absolute;
+  font-size: 1.1rem;
+  filter: drop-shadow(0 0 6px rgba(255, 140, 60, 0.6));
+}
+
+.age-transform__ember {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffe0a3, #d9a441);
+  box-shadow: 0 0 8px 2px rgba(217, 164, 65, 0.6);
+  pointer-events: none;
+}
+
+.age-transform__ember--gather {
+  background: radial-gradient(circle, #fff6df, #ffd9a0);
+}
+
+.age-transform__caption {
+  position: absolute;
+  bottom: -6px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  font-size: 0.85rem;
+  color: var(--color-gold);
+}

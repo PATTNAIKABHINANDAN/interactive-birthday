@@ -1,0 +1,37 @@
+.heart-intro-scene{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 42%,rgba(255,255,255,.95) 0 8%,transparent 32%),
+    linear-gradient(180deg,#fff6d9 0%,#ffedc4 100%);
+}
+.heart-intro-whisper{
+  position:absolute;
+  top:20%;
+  color:#8f1d2c;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:lowercase;
+}
+.heart-intro-button{
+  position:relative;
+  z-index:3;
+  width:138px;
+  height:138px;
+  display:grid;
+  place-items:center;
+  color:#c91f38;
+  font-size:112px;
+  line-height:1;
+  filter:drop-shadow(0 16px 22px rgba(143,29,44,.22));
+  touch-action:manipulation;
+}
+.heart-intro-button:focus-visible{outline:3px solid #d59b49;outline-offset:8px;border-radius:50%}
+.heart-intro-ring{
+  position:absolute;
+  width:156px;
+  height:156px;
+  border:2px solid rgba(201,31,56,.36);
+  border-radius:50%;
+  pointer-events:none;
+}

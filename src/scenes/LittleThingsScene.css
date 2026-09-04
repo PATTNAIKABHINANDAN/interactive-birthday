@@ -1,0 +1,11 @@
+.little-things-scene{background:linear-gradient(180deg,#fff8df 0%,#ffe8bd 100%);gap:18px;overflow:hidden}
+.little-things-copy{max-width:350px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.little-heart-box{width:120px;height:120px;border-radius:34px;background:#fff7e4;border:1px solid rgba(143,29,44,.15);box-shadow:0 18px 38px rgba(143,29,44,.14);display:grid;place-items:center;position:relative;transition:.45s var(--ease-soft)}
+.little-heart-box span{font-size:65px;color:#c91f38;filter:drop-shadow(0 8px 8px rgba(143,29,44,.18))}
+.little-heart-box small{position:absolute;bottom:9px;color:#8f1d2c;font-weight:700;opacity:.7}
+.little-heart-box--open{width:84px;height:84px;border-radius:50%;transform:rotate(-7deg)}
+.little-heart-box--open span{font-size:44px}
+.little-notes{width:min(90vw,390px);display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.little-note{min-height:112px;background:#fffdf3;border-radius:20px;padding:16px 12px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;border:1px solid rgba(201,31,56,.12);box-shadow:0 8px 18px rgba(143,29,44,.08)}
+.little-note span{color:#c91f38;font-size:22px}.little-note p{color:#6e2a27;font-size:.88rem;line-height:1.35;font-weight:600}
+@media(max-height:700px){.little-things-scene{padding-top:28px;padding-bottom:24px}.little-note{min-height:90px}}

@@ -1,0 +1,281 @@
+.bedroom {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-night);
+  overflow: hidden;
+  transition: background 1.2s var(--ease-soft);
+}
+
+.bedroom--lit {
+  background: var(--gradient-warm);
+}
+
+.bedroom__sky {
+  position: absolute;
+  top: 8%;
+  left: 12%;
+  width: 90px;
+  height: 70px;
+}
+
+.bedroom__window {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(255, 247, 243, 0.15);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #1c0a13, #34101d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 1.2s var(--ease-soft);
+}
+
+.bedroom--lit .bedroom__window {
+  background: linear-gradient(180deg, #3c1626, #5c2233);
+}
+
+.bedroom__moon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #f3e3c2;
+  box-shadow: 0 0 16px 4px rgba(243, 227, 194, 0.35);
+  opacity: 0.5;
+  transition: opacity 1.2s var(--ease-soft);
+}
+
+.bedroom--lit .bedroom__moon {
+  opacity: 0.85;
+}
+
+.bedroom__hint {
+  position: absolute;
+  top: 22%;
+  right: 8%;
+  z-index: 6;
+}
+
+.bedroom__lamp {
+  position: absolute;
+  bottom: 30%;
+  left: 14%;
+  width: 46px;
+  z-index: 3;
+}
+
+.bedroom__lamp-shade {
+  width: 46px;
+  height: 34px;
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+  background: var(--color-rose);
+  opacity: 0.5;
+  transition: opacity 1s var(--ease-soft), box-shadow 1s var(--ease-soft);
+}
+
+.bedroom--lit .bedroom__lamp-shade {
+  opacity: 1;
+  box-shadow: 0 0 30px 6px rgba(255, 210, 160, 0.55);
+  background: #ffd9a0;
+}
+
+.bedroom__lamp-glow {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 216, 160, 0.55), transparent 70%);
+  transition: width 1s var(--ease-soft), height 1s var(--ease-soft);
+}
+
+.bedroom--lit .bedroom__lamp-glow {
+  width: 140px;
+  height: 140px;
+  top: -50px;
+}
+
+.bedroom__lamp-stand {
+  width: 4px;
+  height: 40px;
+  background: #6b4a2a;
+  margin: 0 auto;
+}
+
+.bedroom__fairy-lights {
+  position: absolute;
+  top: 4%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 6%;
+  z-index: 2;
+}
+
+.bedroom__bulb {
+  width: 6px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  opacity: 0.15;
+  transition: opacity 0.6s ease;
+}
+
+.bedroom--lit .bedroom__bulb {
+  opacity: 1;
+  animation: twinkle 2.4s ease-in-out infinite;
+  box-shadow: 0 0 8px 2px rgba(217, 164, 65, 0.7);
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.bedroom__floor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 42%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 14px;
+  padding-bottom: 6%;
+}
+
+.bedroom__bed {
+  position: relative;
+  width: 62%;
+  height: 76%;
+  background: linear-gradient(180deg, #8a2c3f, #5c1524);
+  border-radius: 22px 22px 6px 6px;
+  box-shadow: inset 0 6px 14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 14px;
+  opacity: 0.55;
+  transition: opacity 1s var(--ease-soft);
+}
+
+.bedroom--lit .bedroom__bed {
+  opacity: 1;
+}
+
+.bedroom__blanket {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 55%;
+  background: linear-gradient(180deg, #e9a6b5, #c76a80);
+  border-radius: 16px 16px 6px 6px;
+}
+
+.bedroom__pillow {
+  width: 34%;
+  height: 26px;
+  background: var(--color-cream);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.bedroom__pillow--two {
+  background: #ffe9ee;
+}
+
+.bedroom__table {
+  width: 20%;
+  height: 40%;
+  background: #4a2c1c;
+  border-radius: 6px 6px 2px 2px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 4px;
+  font-size: 1.1rem;
+  opacity: 0.55;
+  transition: opacity 1s var(--ease-soft);
+}
+
+.bedroom--lit .bedroom__table {
+  opacity: 1;
+}
+
+.bedroom__teddy {
+  position: absolute;
+  bottom: 32%;
+  left: 20%;
+  font-size: 1.5rem;
+  opacity: 0.4;
+  transition: opacity 1s var(--ease-soft);
+  filter: saturate(0.6);
+  z-index: 2;
+}
+
+.bedroom--lit .bedroom__teddy {
+  opacity: 1;
+  filter: saturate(1);
+}
+
+.bedroom__balloons {
+  position: absolute;
+  top: 12%;
+  right: 8%;
+  display: flex;
+  gap: 14px;
+}
+
+.bedroom__balloon {
+  position: relative;
+  width: 22px;
+  height: 28px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  opacity: 0.4;
+  transition: opacity 1s var(--ease-soft);
+  animation: bob 4s ease-in-out infinite;
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.15), inset 3px 3px 6px rgba(255, 255, 255, 0.25);
+}
+
+.bedroom__balloon::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 1px;
+  height: 22px;
+  background: rgba(255, 247, 243, 0.3);
+}
+
+.bedroom--lit .bedroom__balloon {
+  opacity: 0.9;
+}
+
+.bedroom__balloon--rose {
+  background: var(--color-rose);
+}
+
+.bedroom__balloon--pink {
+  background: var(--color-pink);
+  animation-delay: 0.6s;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.bedroom__caption {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 6;
+}

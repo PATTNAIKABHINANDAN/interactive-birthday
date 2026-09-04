@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100">
+<rect width="900" height="1100" fill="#f4f0f2"/>
+<rect x="55" y="55" width="790" height="990" rx="30" fill="none" stroke="#b9aeb4" stroke-width="4" stroke-dasharray="16 16"/>
+<text x="450" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#6d6268">Add your photo</text>
+<text x="450" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#8c8187">Replace this placeholder in public/assets/photos</text>
+</svg>

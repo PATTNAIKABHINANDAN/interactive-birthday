@@ -1,0 +1,8 @@
+CUSTOMISE THIS WEBSITE
+
+1. Edit src/data/birthdayData.js to add your own name, messages, captions, age and lock code.
+2. Replace the SVG files in public/assets/photos/ with your own images, then update the filenames in src/data/birthdayData.js if needed.
+3. Optional: add a video at public/assets/videos/special-memory.mp4.
+4. Optional: add music at public/assets/music/music.mp3.
+
+No personal photos, messages, dates, names, music or video are included in this template.
