@@ -5,7 +5,7 @@ import FloatingHearts from "../components/FloatingHearts";
 import { birthdayData, specialMemoryVideoSrc } from "../data/birthdayData";
 import "./SpecialMemoryVideoScene.css";
 
-export default function SpecialMemoryVideoScene({ onNext, musicRef }) {
+export default function SpecialMemoryVideoScene({ onRestart, musicRef }) {
   const videoRef = useRef(null);
   const [started, setStarted] = useState(false);
   const [finished, setFinished] = useState(false);
@@ -50,7 +50,7 @@ export default function SpecialMemoryVideoScene({ onNext, musicRef }) {
         {missing && <div className="special-video-placeholder"><span>♥</span><p>Add your video at</p><code>public/assets/videos/special-memory.mp4</code></div>}
       </motion.div>
 
-      {(finished || missing) && <NavButton onClick={()=>{resumeMusic();onNext();}} delay={.2}>see what I found →</NavButton>}
+      {(finished || missing) && <NavButton onClick={()=>{resumeMusic();onRestart();}} delay={.2}>restart the little story ↻</NavButton>}
     </div>
   );
 }

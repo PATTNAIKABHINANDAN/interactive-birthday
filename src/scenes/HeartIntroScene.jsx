@@ -2,12 +2,13 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import "./HeartIntroScene.css";
 
-export default function HeartIntroScene({ onNext }) {
+export default function HeartIntroScene({ onNext, musicRef }) {
   const [opened, setOpened] = useState(false);
 
   const openHeart = () => {
     if (opened) return;
     setOpened(true);
+    musicRef?.current?.start();
     window.setTimeout(onNext, 880);
   };
 

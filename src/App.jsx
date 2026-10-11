@@ -2,6 +2,7 @@ import { useRef } from "react";
 import SceneManager from "./components/SceneManager";
 import MusicController from "./components/MusicController";
 import HeartIntroScene from "./scenes/HeartIntroScene";
+import GiftCatchScene from "./scenes/GiftCatchScene";
 import CakeCutScene from "./scenes/CakeCutScene";
 import LockScene from "./scenes/LockScene";
 import MemoriesScene from "./scenes/MemoriesScene";
@@ -14,15 +15,16 @@ import HeartTreeScene from "./scenes/HeartTreeScene";
 
 const SCENES = [
   { id: "heart-intro", Component: HeartIntroScene, transition: "fade" },
+  { id: "gift-catch", Component: GiftCatchScene, transition: "particles" },
   { id: "cake", Component: CakeCutScene, transition: "fade" },
   { id: "lock", Component: LockScene, transition: "particles" },
   { id: "memories", Component: MemoriesScene, transition: "scrapbook" },
-  { id: "special-video", Component: SpecialMemoryVideoScene, transition: "slowFade" },
   { id: "gallery", Component: GalleryScene, transition: "particles" },
   { id: "funny", Component: FunnyScene, transition: "heart" },
   { id: "little-things", Component: LittleThingsScene, transition: "heart" },
   { id: "letter", Component: LetterEnvelopeScene, transition: "scrapbook" },
   { id: "tree", Component: HeartTreeScene, transition: "slowFade" },
+  { id: "special-video", Component: SpecialMemoryVideoScene, transition: "slowFade" },
 ];
 
 export default function App() {

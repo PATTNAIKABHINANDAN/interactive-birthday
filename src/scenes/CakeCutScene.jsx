@@ -61,7 +61,7 @@ function PixelCake({ cut }) {
   );
 }
 
-export default function CakeCutScene({ onNext, musicRef }) {
+export default function CakeCutScene({ onNext }) {
   const [cut, setCut] = useState(false);
   const [swiping, setSwiping] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -73,7 +73,6 @@ export default function CakeCutScene({ onNext, musicRef }) {
     setCut(true);
     setProgress(1);
     setSwiping(false);
-    musicRef?.current?.start();
   };
 
   const pointerDown = (e) => {
